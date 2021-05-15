@@ -1,7 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import * as _ from 'lodash';
-import { summaryFileName } from '@angular/compiler/src/aot/util';
 
 export interface Centre{
   name:string,
@@ -65,7 +64,7 @@ export class AppComponent implements OnInit {
     },5000)
   }
   goApi(pincode){
-    this.httpClient.get<any>(`https://cdn-api.co-vin.in/api/v2/appointment/sessions/calendarByPin?pincode=${pincode}&date=${this.dateString}`).subscribe(data=>{
+    this.httpClient.get<any>(`https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode=${pincode}&date=${this.dateString}`).subscribe(data=>{
         data=data.centers;
         this.centres= data.map(x=>{
           let slots=this.getSlots(x.sessions);
