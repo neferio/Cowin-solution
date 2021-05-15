@@ -1,0 +1,16 @@
+<h1 class="heading">Vaccine Easy</h1>
+
+<div class="formBar">
+    <h3>Enter your pincode ( Only for 18-44)</h3>
+    <div class="bar">
+      <input [(ngModel)]="pincode">
+      <button (click)="start(pincode)">Find</button>
+    </div>
+    
+
+</div>
+
+
+<div *ngFor="let centre of centres" class="data">
+  <p>Vaccine Available in <b><span class="name">{{centre.name}}</span></b> is <span class="count">{{centre.sum}}</span></p>
+  </div>
