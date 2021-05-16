@@ -1,29 +1,127 @@
-.heading{
-    text-align:center;
-    color:rgb(19, 32, 107);
-    letter-spacing: 2px;
-}
+// .heading{
+//     text-align:center;
+//     color:rgb(19, 32, 107);
+//     letter-spacing: 2px;
+// }
 
-.formBar{
-    h3{
-        color:rgb(6, 6, 59);
-    }
-   .bar{
-       input{
-        margin-right: 30px;
-       }
+// .formBar{
+//     h3{
+//         color:rgb(6, 6, 59);
+//     }
+//    .bar{
+//        input{
+//         margin-right: 30px;
+//        }
        
-   }
+//    }
+// }
+
+// .data{
+//     p{
+//         font-size: 16px;
+//         .count{
+//             font-size: 20px;
+//             margin-left: 15px;
+//         }
+//     }
+
+
+// }
+
+.main{
+   // background-image: url('../assets/img/be.jpeg');
+    height: max-content;
+    background-size: cover;
 }
 
-.data{
-    p{
-        font-size: 16px;
-        .count{
-            font-size: 20px;
-            margin-left: 15px;
+.heading{
+    padding: 180px;
+    padding-bottom: 100px !important;
+    display: flex;
+    justify-content: center;
+    .head-box{
+        border: 5px solid whitesmoke;
+        /* text-align: center; */
+        padding: 25px;
+        width: fit-content;
+        p{
+            margin:0px;
+                /* text-align: center; */
+                font-size: 50px;
+                color: white;
+                letter-spacing: 2px;
         }
     }
-
-
+    
+    
+    
 }
+
+.search-opening{
+    margin-bottom: 50px;
+    
+
+    background-size: cover;
+    .head{
+        display: flex;
+        justify-content: center;
+        p{
+            font-size: 28px;
+            color: white;
+            font-family: system-ui;
+            letter-spacing: 2px;
+        }
+    }
+    .button-area{
+        padding:30px;
+        display: flex;
+        justify-content: space-evenly;
+        .area1{
+            padding: 20px;
+            border: 1px solid white;
+            .normal{
+                color: white;
+                font-size: 18px;
+                letter-spacing: 2px;
+            }
+            .alert{
+                color: red;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            div{
+                text-align: center;
+                button{
+                    padding: 8px 24px;
+                    color: white;
+                    letter-spacing: 1px;
+                    font-size: 12px;
+                    background-color: slategray;
+                    
+                }
+            }
+            
+        }
+        .area2{
+            padding: 20px;
+            border: 1px solid white;
+            p{
+                color: white;
+                font-size: 18px;
+                letter-spacing: 2px;
+            }
+            div{
+                text-align: center;
+                button{
+                    padding: 8px 24px;
+                    color: white;
+                    letter-spacing: 1px;
+                    font-size: 12px;
+                    background-color: slategray;
+                    
+                }
+            }
+        }
+    }
+}
+
